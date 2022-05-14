@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hangman</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="start-container">
+      <h1>Hangman</h1>
+      <button class="start">Start Game</button>
+    </div>
+    <div id="hiddenWord"><p></p></div>
+
+    <div class="hangman hide">
+      <div id="line3" class="line hide"></div>
+      <div id="line2" class="line hide"></div>
+      <div id="line" class="line hide"></div>
+      <div id="line9" class="line hide"></div>
+      <div id="line4" class="line hide"></div>
+      <div id="circle" class="line hide"></div>
+      <div id="line5" class="line hide"></div>
+      <div id="line6" class="line hide"></div>
+      <div id="line7" class="line hide"></div>
+      <div id="line8" class="line hide"></div>
+    </div>
+    <div class="letters-container hide">
+      <ul class="usedLetters hide"></ul>
+    </div>
+    <div class="input-container">
+      <input
+        class="input hide"
+        type="text"
+        placeholder="Enter a letter here"
+        maxlength="1"
+      />
+      <button class="button hide">Check letter</button>
+      <button class="reset hide">Reset Game</button>
+    </div>
+    <div class="game-over hide">
+      <h2 class="game-over-message">Game over! /n Better luck next time</h2>
+    </div>
+    <div class="won-game hide">
+      <h2 class="won-game-message">
+        Well done, you guessed the word correctly
+      </h2>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
